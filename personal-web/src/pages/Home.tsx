@@ -4,6 +4,9 @@ import { useEffect } from "react";
 import { ThemeToggle } from "../components/ThemeToggle";
 import LandingScreen from "../components/LandingScreen";
 import NavBar from "../components/Navbar";
+import { About } from "../components/About";
+import { Employment } from "../components/Employment";
+import { Projects } from "../components/Projects";
 
 export const Home: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -23,14 +26,17 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-dvh-screen bg-background text-foreground flex flex-col overflow-x-hidden">
+    <div className="min-h-dvh-screen flex flex-col overflow-x-hidden">
       <ThemeToggle onToggle={handleThemeToggle} isDarkMode={isDarkMode} />
 
-      {/* background effects */}
       <LandingScreen />
-      {/* header */}
       <NavBar />
-      {/* main content */}
+      <About />
+      <Employment />
+      <Projects />
+      {/* extracurriculars */}
+      {/* contact */}
+
       {/* footer */}
     </div>
   );

@@ -1,23 +1,28 @@
 import React from "react";
 import photo1 from "../assets/photo1.jpg";
 import { Icon } from "../components/Icon";
+import ArrowIcon from "../assets/arrow-down.svg?react";
 
 export const LandingScreen: React.FC = () => {
   return (
-    <div className="fixed inset-0 z-0">
+    <div
+      className="relative z-0 min-h-screen text-shadow-black text-shadow-sm"
+      id="hero"
+    >
       <img
         src={photo1}
         alt="Background Photo 1"
-        className="absolute inset-0 h-full w-full object-cover opacity-70"
+        className="absolute inset-0 h-full w-full object-cover brightness-80"
       />
-      <div className="text-primary-foreground relative z-10 flex h-full flex-col items-center justify-center">
+      <div className="text-primary-foreground relative z-10 flex min-h-screen flex-col items-center justify-center">
         <p className="text-5xl text-shadow-black text-shadow-sm md:text-8xl xl:text-[150px]">
           Michael Song
         </p>
-        <p className="md:text-lg xl:text-2xl">
-          CS + Biology @ Northeastern | Software Developer @ Sandbox
+        <p className="text-shadow-black text-shadow-sm md:text-lg xl:text-2xl">
+          Computer Science + Biology @ Northeastern <br /> Software Developer @
+          Sandbox
         </p>
-        <div className="flex flex-row">
+        <div className="mt-3 flex w-1/2 flex-row justify-between md:w-1/3">
           <Icon type="github" />
           <Icon type="linkedin" />
           <Icon type="email" />
@@ -25,8 +30,8 @@ export const LandingScreen: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-primary-foreground text-md absolute bottom-3 left-5 z-15">
-        Photo taken in the Chartreuse Mountains, by me!
+      <div className="text-primary-foreground absolute bottom-3 left-5 z-15 text-sm lg:text-lg">
+        I took this photo in the Chartreuse Mountains!
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -33,17 +33,17 @@ export const Navbar: React.FC = () => {
     <nav
       className={cn(
         "fixed z-40 w-full py-5 transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-md" : "bg-transparent",
+        isScrolled ? "bg-card/80 backdrop-blur-sm" : "bg-transparent",
       )}
     >
       {/* non-mobile one */}
-      <div className="container flex items-center justify-between">
-        <div className="hidden space-x-8 md:flex">
+      <div className="container flex justify-between">
+        <div className="flex w-full flex-row justify-start space-x-8">
           {navItems.map((item, key) => (
             <a
               key={key}
               href={item.href}
-              className="text-foreground/80 hover:text-primary text-xl font-medium transition-colors duration-300"
+              className="text-opacity-100 hover:text-primary text-xl font-medium text-white transition-colors duration-300"
             >
               {item.name}
             </a>
