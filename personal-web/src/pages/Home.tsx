@@ -10,7 +10,7 @@ import { Contact } from "../components/Contact";
 import { Education } from "@/components/Education";
 
 export const Home: React.FC = () => {
-  const [_, setIsDarkMode] = useState(true);
+  // const [_, setIsDarkMode] = useState(true);
 
   // const handleThemeToggle = () => {
   //   setIsDarkMode(!isDarkMode);
@@ -18,13 +18,13 @@ export const Home: React.FC = () => {
   //   localStorage.setItem("theme", !isDarkMode ? "dark" : "light");
   // };
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      setIsDarkMode(savedTheme === "dark");
-      document.documentElement.classList.toggle("dark", savedTheme === "dark");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem("theme");
+  //   if (savedTheme) {
+  //     setIsDarkMode(savedTheme === "dark");
+  //     document.documentElement.classList.toggle("dark", savedTheme === "dark");
+  //   }
+  // }, []);
 
   return (
     <div className="min-h-dvh-screen flex flex-col overflow-x-hidden">
