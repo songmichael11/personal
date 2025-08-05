@@ -4,7 +4,7 @@ import pfp from "../assets/pfp.png";
 export const About: React.FC = () => {
   return (
     <div
-      className="bg-primary/50 flex h-full w-full flex-col items-center justify-center py-3"
+      className="bg-primary/50 flex h-full w-full scroll-mt-12 flex-col items-center justify-center py-3"
       id="about"
     >
       <h1 className="text-opacity-100 mt-5 text-3xl font-bold text-white">
@@ -14,14 +14,14 @@ export const About: React.FC = () => {
         <img
           src={pfp}
           alt="Profile"
-          className="border-primary mt-5 ml-10 h-80 w-80 rounded-full border-4"
+          className="border-primary mt-5 ml-10 h-40 w-40 rounded-full border-4 md:h-80 md:w-80"
         />
-        <p className="text-opacity-100 mt-5 text-left text-xl text-white">
+        <p className="text-opacity-100 text-md mt-5 text-left text-white md:text-xl">
           I'm Michael Song, a class of 2028 B.S. computer science and biology
           student at Northeastern University. I'm interested in software
           engineering, bioinformatics, and machine learning.
           <br />
-          <br />
+          <br className="hidden lg:block" />
           <span className="hidden lg:block">
             In the past, I've worked on projects involving web development, data
             analysis, and AI in both industry and academic settings. Currently,

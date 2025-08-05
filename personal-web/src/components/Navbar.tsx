@@ -11,6 +11,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
@@ -33,7 +34,9 @@ export const Navbar: React.FC = () => {
     <nav
       className={cn(
         "fixed z-40 w-full py-5 transition-all duration-300",
-        isScrolled ? "bg-card/80 backdrop-blur-sm" : "bg-transparent",
+        isScrolled
+          ? "bg-[color:hsl(222,47%,8%)]/80 backdrop-blur-sm"
+          : "bg-transparent",
       )}
     >
       {/* non-mobile one */}

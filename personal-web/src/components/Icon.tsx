@@ -28,32 +28,20 @@ export const Icon: React.FC<IconProps> = ({ type }) => {
   if (type === "resume") {
     return (
       <a href="../assets/resume.docx" download>
-        <ResumeIcon
-          label="Resume"
-          className="text-primary-foreground hover:text-primary h-10 w-10 fill-current transition md:h-15 md:w-15"
-        />
+        <ResumeIcon className="text-primary-foreground hover:text-primary h-10 w-10 fill-current transition md:h-15 md:w-15" />
       </a>
     );
   } else {
     return (
       <a href={iconMap[type].url} target="_blank" rel="noopener noreferrer">
         {type === "github" && (
-          <GitHubIcon
-            label="GitHub"
-            className="text-primary-foreground hover:text-primary h-10 w-10 fill-current transition md:h-15 md:w-15"
-          />
+          <GitHubIcon className="text-primary-foreground hover:text-primary h-10 w-10 fill-current transition md:h-15 md:w-15" />
         )}
         {type === "linkedin" && (
-          <LinkedInIcon
-            label="Linkedin"
-            className="text-primary-foreground hover:text-primary h-10 w-10 fill-current transition md:h-15 md:w-15"
-          />
+          <LinkedInIcon className="text-primary-foreground hover:text-primary h-10 w-10 fill-current transition md:h-15 md:w-15" />
         )}
         {type === "email" && (
-          <EmailIcon
-            label="Email"
-            className="text-primary-foreground hover:text-primary translate-y--1 h-10 w-12 fill-current transition md:h-17 md:w-15"
-          />
+          <EmailIcon className="text-primary-foreground hover:text-primary translate-y--1 h-10 w-12 fill-current transition md:h-17 md:w-15" />
         )}
       </a>
     );

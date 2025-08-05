@@ -28,9 +28,11 @@ export const LandingScreen: React.FC = () => {
           <Icon type="email" />
           <Icon type="resume" />
         </div>
+        <a href="#about">
+          <ArrowIcon className="hover:text-primary absolute bottom-5 z-20 h-10 w-10 animate-bounce fill-current text-white transition" />
+        </a>
       </div>
-
-      <div className="text-primary-foreground absolute bottom-3 left-5 z-15 text-sm lg:text-lg">
+      <div className="text-primary-foreground absolute right-5 bottom-3 z-15 text-sm lg:text-lg">
         I took this photo in the Chartreuse Mountains!
       </div>
     </div>
