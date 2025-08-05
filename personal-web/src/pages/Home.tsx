@@ -1,6 +1,4 @@
 import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
 import LandingScreen from "../components/LandingScreen";
 import NavBar from "../components/Navbar";
 import { About } from "../components/About";
