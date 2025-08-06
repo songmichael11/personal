@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { useEffect } from "react";
 import LandingScreen from "../components/LandingScreen";
 import NavBar from "../components/Navbar";
@@ -10,7 +10,7 @@ import { Contact } from "../components/Contact";
 import { Education } from "@/components/Education";
 
 export const Home: React.FC = () => {
-  const [_, setIsDarkMode] = useState(true);
+  // const [_, setIsDarkMode] = useState(true);
 
   // const handleThemeToggle = () => {
   //   setIsDarkMode(!isDarkMode);
@@ -18,17 +18,16 @@ export const Home: React.FC = () => {
   //   localStorage.setItem("theme", !isDarkMode ? "dark" : "light");
   // };
 
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem("theme");
+  //   if (savedTheme) {
+  //     setIsDarkMode(savedTheme === "dark");
+  //     document.documentElement.classList.toggle("dark", savedTheme === "dark");
+  //   }
+  // }, []);
+
   useEffect(() => {
-    if (typeof window !== "undefined" && typeof document !== "undefined") {
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) {
-        setIsDarkMode(savedTheme === "dark");
-        document.documentElement.classList.toggle(
-          "dark",
-          savedTheme === "dark",
-        );
-      }
-    }
+    document.documentElement.classList.add("dark");
   }, []);
 
   return (
