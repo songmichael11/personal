@@ -63,6 +63,20 @@
 
 @layer base {
   :root {
+    --background: 210 40% 90%;
+    --backgroundtwo: 210 40% 95%;
+    --backgroundthree: 212 100% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+
+    --primary: 125 100% 97%;
+    --primary-foreground: 208 93% 28%;
+
+    --border: 214 32% 91%;
+  }
+
+  .dark {
     --background: 222 47% 4%;
     --backgroundtwo: 60 29% 91%;
     --backgroundthree: 212 100% 95%;
@@ -75,20 +89,6 @@
 
     --border: 217 33% 20%;
   }
-
-  /* .dark {
-     --background: 210 40% 90%;
-    --backgroundtwo: 210 40% 95%;
-    --backgroundthree: 212 100% 97%;
-    --foreground: 222 47% 11%;
-
-    --card: 0 0% 100%;
-
-    --primary: 125 100% 97%;
-    --primary-foreground: 208 93% 28%;
-
-    --border: 214 32% 91%;
-  } */
 
   * padding {
     @apply border-border; /* applies the border color variable */

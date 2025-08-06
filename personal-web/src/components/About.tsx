@@ -24,11 +24,10 @@ export const About: React.FC = () => {
           <br className="hidden lg:block" />
           <span className="hidden lg:block">
             In the past, I've worked on projects involving web development, data
-            analysis, and AI in both industry and academic settings. Currently,
-            I'm a data analyst at Kaerwell and a software developer for Sandbox
-            Software Consultancy at Northeastern. Outside of class and work, I'm
-            involved with the Society of Asian Scientists and Engineers (SASE)
-            and Volleyball.
+            analysis, and AI. Currently, I'm a data analyst at Kaerwell and a
+            software developer for Sandbox Software Consultancy at Northeastern.
+            Outside of class and work, I'm involved with the Society of Asian
+            Scientists and Engineers (SASE), rock climb and play volleyball.
           </span>
           <br />
           I'm currently looking for research opportunities year-round, co-ops

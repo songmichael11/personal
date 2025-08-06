@@ -19,7 +19,7 @@ export const Employment: React.FC = () => {
         Relevant Experience
       </h1>
       <div className="mx-10 text-start md:mx-40">
-        <Timeline>
+        <Timeline className="!text-primary !border-primary !border-l">
           <TimelineItem className="mb--5">
             <TimelinePoint />
             <TimelineContent>
