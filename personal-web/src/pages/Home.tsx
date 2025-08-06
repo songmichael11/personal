@@ -19,10 +19,15 @@ export const Home: React.FC = () => {
   // };
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      setIsDarkMode(savedTheme === "dark");
-      document.documentElement.classList.toggle("dark", savedTheme === "dark");
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        setIsDarkMode(savedTheme === "dark");
+        document.documentElement.classList.toggle(
+          "dark",
+          savedTheme === "dark",
+        );
+      }
     }
   }, []);
 
