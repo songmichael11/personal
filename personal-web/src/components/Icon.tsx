@@ -27,7 +27,7 @@ export const Icon: React.FC<IconProps> = ({ type }) => {
 
   if (type === "resume") {
     return (
-      <a href="../assets/resume.docx" download>
+      <a href="./resume.docx" download>
         <ResumeIcon className="text-primary-foreground hover:text-primary h-10 w-10 fill-current transition md:h-15 md:w-15" />
       </a>
     );
