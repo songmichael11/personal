@@ -75,11 +75,12 @@ export const Projects: React.FC = () => {
       technologies: ["JavaScript", "React", "Python"],
     },
     {
-      title: "Analysis (WIP)",
-      description: "WIP project in R for practice.",
-      link: "https://example.com/project5",
+      title: "AI Detector Bias Study",
+      description:
+        "Study of whether AI detectors are more likely to flag essays written by non-native vs. native English speakers as AI.",
+      link: "https://github.com/songmichael11/r-study",
       image: RStudio,
-      technologies: ["R", "RStudio"],
+      technologies: ["R", "RStudio", "dplyr", "ggplot2", "readr"],
     },
   ];
 
