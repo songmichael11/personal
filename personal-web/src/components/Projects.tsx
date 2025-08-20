@@ -128,11 +128,13 @@ export const Projects: React.FC = () => {
                         <GitHubIcon className="text-backgroundthree hover:text-primary ml-2 h-5 w-5 fill-current transition md:h-10 md:w-10" />
                       </a>
                     </div>
-                    <CardDescription className="text-md flex h-[200px] flex-col justify-between space-y-2 text-start">
-                      <div>{item.description}</div>
-                      <div>
-                        <b>Technologies:</b>{" "}
-                        {item.technologies?.join(" | ") || "N/A"}
+                    <CardDescription className="text-md text-start">
+                      <div className="flex max-h-40 flex-col space-y-2 overflow-y-auto [-webkit-overflow-scrolling:touch] sm:max-h-none sm:overflow-visible">
+                        <div>{item.description}</div>
+                        <div>
+                          <b>Technologies:</b>{" "}
+                          {item.technologies?.join(" | ") || "N/A"}
+                        </div>
                       </div>
                     </CardDescription>
                   </CardHeader>
