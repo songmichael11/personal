@@ -94,7 +94,7 @@ export const Projects: React.FC = () => {
       </h1>
 
       <Carousel
-        className="w-full max-w-5/6"
+        className="w-full max-w-2/3 sm:max-w-5/6"
         opts={{
           dragFree: true,
           loop: true,

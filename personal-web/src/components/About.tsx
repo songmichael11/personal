@@ -10,13 +10,13 @@ export const About: React.FC = () => {
       <h1 className="text-opacity-100 mt-5 text-3xl font-bold text-white">
         Nice to meet you!
       </h1>
-      <div className="mx-5 mb-5 flex flex-row items-center justify-center space-x-5 text-lg text-white md:mx-30 md:text-xl">
+      <div className="mx-5 mb-5 flex flex-col items-center justify-center space-x-5 text-lg text-white sm:flex-row md:mx-30 md:text-xl">
         <img
           src={pfp}
           alt="Profile"
           className="border-primary mt-5 ml-10 h-40 w-40 rounded-full border-4 md:h-80 md:w-80"
         />
-        <p className="text-opacity-100 text-md mt-5 text-left text-white md:text-xl">
+        <p className="text-opacity-100 text-md mt-5 text-center text-white sm:text-left md:text-xl">
           I'm Michael Song, a class of 2028 B.S. computer science and biology
           student at Northeastern University. I'm interested in software
           engineering, bioinformatics, and machine learning.

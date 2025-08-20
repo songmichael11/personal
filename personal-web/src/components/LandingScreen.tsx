@@ -32,7 +32,7 @@ export const LandingScreen: React.FC = () => {
           <ArrowIcon className="hover:text-primary absolute bottom-5 z-20 h-10 w-10 animate-bounce fill-current text-white transition" />
         </a>
       </div>
-      <div className="text-primary-foreground absolute right-5 bottom-3 z-15 text-sm lg:text-lg">
+      <div className="text-primary-foreground absolute right-5 bottom-3 z-15 text-[12px] sm:text-sm lg:text-lg">
         I took this photo in the Chartreuse Mountains!
       </div>
     </div>

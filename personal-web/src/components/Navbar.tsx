@@ -39,14 +39,13 @@ export const Navbar: React.FC = () => {
           : "bg-transparent",
       )}
     >
-      {/* non-mobile one */}
       <div className="container flex justify-between">
-        <div className="flex w-full flex-row justify-start space-x-8">
+        <div className="flex w-full flex-row space-x-4 md:space-x-8">
           {navItems.map((item, key) => (
             <a
               key={key}
               href={item.href}
-              className="text-opacity-100 hover:text-primary text-xl font-medium text-white transition-colors duration-300"
+              className="text-opacity-100 hover:text-primary text-sm font-medium text-white transition-colors duration-300 md:text-xl"
             >
               {item.name}
             </a>
