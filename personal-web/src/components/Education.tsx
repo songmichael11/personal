@@ -24,7 +24,7 @@ export const Education: React.FC = () => {
             <TimelinePoint />
             <TimelineContent>
               <TimelineTime className="!text-black/50">
-                September 2024 - Present
+                September 2024 - Expected December 2027
               </TimelineTime>
               <TimelineTitle className="!text-primary">
                 Northeastern University
@@ -34,10 +34,11 @@ export const Education: React.FC = () => {
                   B.S. in Computer Science and Biology
                 </span>
                 <br />
-                <b>GPA:</b> 4.0/4.0
+                <b>GPA:</b> 3.97/4.0
                 <br />
-                <b>Relevant Coursework:</b> Database Design | Biostatistics |
-                Fundamentals of Computer Science 1 & 2 | Discrete Structures
+                <b>Relevant Coursework:</b> Object-Oriented Design | Database
+                Design | Biostatistics | Fundamentals of Computer Science 1 & 2
+                | Discrete Structures
               </TimelineBody>
             </TimelineContent>
           </TimelineItem>

@@ -24,17 +24,37 @@ export const Employment: React.FC = () => {
             <TimelinePoint />
             <TimelineContent>
               <TimelineTime className="!text-black/50">
-                January 2025 - Present
+                January 2026 - Present
               </TimelineTime>
               <TimelineTitle className="!text-primary">
-                Software Developer | Sandbox Software Consultancy @ Northeastern
+                Full Stack Software Developer | HomeTap
               </TimelineTitle>
               <TimelineBody className="!text-black">
                 <ul className="list-disc pl-5">
                   <li>
-                    Developed key features in Cooper, a platform that enables
-                    10,000+ Northeastern students to view and submit reviews for
-                    co-op roles using the T3 tech stack
+                    Incoming Full Stack Software Developer Co-op for Spring 2026
+                  </li>
+                </ul>
+              </TimelineBody>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem className="mb--5">
+            <TimelinePoint />
+            <TimelineContent>
+              <TimelineTime className="!text-black/50">
+                January 2025 - Present
+              </TimelineTime>
+              <TimelineTitle className="!text-primary">
+                Project Lead & Software Developer | Sandbox Software Consultancy
+                @ Northeastern
+              </TimelineTitle>
+              <TimelineBody className="!text-black">
+                <ul className="list-disc pl-5">
+                  <li>
+                    Lead a team of 10 developers and designers to create a co-op
+                    review platform enabling 10,000+ Northeastern students to
+                    view and submit reviews for co-op roles utilizing the T3
+                    tech stack
                   </li>
                   <li>
                     Designed and implemented PostgreSQL schemas for role and
@@ -59,29 +79,54 @@ export const Employment: React.FC = () => {
             <TimelinePoint />
             <TimelineContent>
               <TimelineTime className="!text-black/50">
-                July 2024 - Present
+                July 2025 - September 2025
               </TimelineTime>
               <TimelineTitle className="!text-primary">
-                Data Analyst | Medtech Analytics & Kaerwell
+                Data Analyst | Kaerwell Inc.
               </TimelineTitle>
               <TimelineBody className="!text-black">
                 <ul className="list-disc pl-5">
                   <li>
-                    Built a Python data pipeline with AWS Athena and S3
-                    integration to ingest 50M+ data points at a time, automating
-                    DDL generation and execution for large-scale analysis of
+                    Implemented and tested automated market basket analysis
+                    using PySpark's FP-Growth algorithm to automatically
+                    recommend relevant products based on current shopping cart
+                    state
+                  </li>
+                  <li>
+                    Built an AWS Lambda-ready FP-Growth workflow leveraging
+                    hashed, pickled files in S3 to reduce recommendation time
+                    from ~100 milliseconds to &lt;1 millisecond each
+                  </li>
+                </ul>
+              </TimelineBody>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem className="mb--5">
+            <TimelinePoint />
+            <TimelineContent>
+              <TimelineTime className="!text-black/50">
+                July 2024 - April 2025
+              </TimelineTime>
+              <TimelineTitle className="!text-primary">
+                Data Analyst | Medtech Analytics
+              </TimelineTitle>
+              <TimelineBody className="!text-black">
+                <ul className="list-disc pl-5">
+                  <li>
+                    Architected a Python data pipeline with AWS Athena and S3
+                    integration to ingest 50M+ data points, automating DDL
+                    generation and execution for large-scale analysis of
                     Duchenne muscular dystrophy (DMD)
                   </li>
                   <li>
-                    Developed Presto SQL queries to analyze 150M+ unique
-                    healthcare data points, identifying symptom patterns and
+                    Developed Presto SQL queries to analyze 150M+ unique rows of
+                    healthcare data, identifying common symptom patterns and
                     flagging 1,000+ misdiagnoses of Lambert-Eaton Myasthenic
                     Syndrome (LEMS)
                   </li>
                   <li>
-                    Met biweekly with a team of medical professionals to present
-                    findings to a non-technical audience and refine analyses
-                    using medicine-driven reasoning
+                    Translated technical findings into clinical insights during
+                    biweekly meetings with healthcare professionals
                   </li>
                 </ul>
               </TimelineBody>
