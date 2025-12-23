@@ -19,8 +19,8 @@ export const LandingScreen: React.FC = () => {
           Michael Song
         </p>
         <p className="text-shadow-black text-shadow-sm md:text-lg xl:text-2xl">
-          Computer Science + Biology @ Northeastern <br /> Software Developer @
-          Sandbox
+          Computer Science + Biology @ Northeastern <br /> Project Lead &
+          Software Developer @ Sandbox
         </p>
         <div className="mt-3 flex w-1/2 flex-row justify-between md:w-1/3">
           <Icon type="github" />
