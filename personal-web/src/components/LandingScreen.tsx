@@ -2,6 +2,7 @@ import React from "react";
 import photo1 from "../assets/photo1.jpg";
 import { Icon } from "../components/Icon";
 import ArrowIcon from "../assets/arrow-down.svg?react";
+import { RoleRotator } from "./landing/RoleRotator";
 
 export const LandingScreen: React.FC = () => {
   return (
@@ -19,8 +20,14 @@ export const LandingScreen: React.FC = () => {
           Michael Song
         </p>
         <p className="text-shadow-black text-shadow-sm md:text-lg xl:text-2xl">
-          Computer Science + Biology @ Northeastern <br /> Project Lead &
-          Software Developer @ Sandbox
+          <RoleRotator
+            roles={[
+              "Computer Science + Biology @ Northeastern",
+              "Full Stack SWE Co-op @ Hometap",
+              "Incoming Backend SWE Intern @ HubSpot",
+            ]}
+            intervalMs={2500}
+          />
         </p>
         <div className="mt-3 flex w-1/2 flex-row justify-between md:w-1/3">
           <Icon type="github" />

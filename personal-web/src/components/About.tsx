@@ -22,17 +22,11 @@ export const About: React.FC = () => {
           engineering, bioinformatics, and machine learning.
           <br />
           <br className="hidden lg:block" />
-          <span className="hidden lg:block">
-            In the past, I've worked on projects involving web development, data
-            analysis, and AI. Currently, I'm a data analyst at Kaerwell and a
-            software developer for Sandbox Software Consultancy at Northeastern.
-            Outside of class and work, I'm involved with the Society of Asian
-            Scientists and Engineers (SASE), rock climb and play volleyball.
-          </span>
-          <br />
-          I'm currently looking for research opportunities year-round, co-ops
-          for Spring 2026, and internships for Summer 2026. If you have any
-          questions or would like to connect, feel free to reach out!
+          In the past, I've worked on projects involving web development, data
+          analysis, and AI. Currently, I'm a data analyst at Kaerwell and a
+          software developer for Sandbox Software Consultancy at Northeastern.
+          Outside of class and work, I'm involved with the Society of Asian
+          Scientists and Engineers (SASE), rock climb and play volleyball.
         </p>
       </div>
     </div>

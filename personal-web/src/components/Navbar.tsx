@@ -33,10 +33,10 @@ export const Navbar: React.FC = () => {
   return (
     <nav
       className={cn(
-        "fixed z-40 w-full py-5 transition-all duration-300",
+        "fixed z-40 w-full bg-[color:hsl(222,47%,8%)]/80 py-5 backdrop-blur-sm transition-all duration-300",
         isScrolled
           ? "bg-[color:hsl(222,47%,8%)]/80 backdrop-blur-sm"
-          : "bg-transparent",
+          : "bg-transparent md:bg-transparent md:backdrop-blur-none",
       )}
     >
       <div className="container flex justify-between">
